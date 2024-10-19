@@ -1,9 +1,16 @@
+import { Outlet } from "react-router-dom";
+import Navbar from "./components/nav/Navbar.jsx";
 
 function App() {
   return (
-    <div className="h-screen flex items-center justify-center bg-gray-100">
-      <h1 className="text-1xl font-bold text-blue-600">Hello, Tailwind CSS!</h1>
+    <>
+    <div className="flex justify-center bg-gray-100">
+      <Navbar />
+      </div>
+    <div className="min-h-screen flex flex-col items-center justify-center bg-gray-100 gap-5">
+      <Outlet />
     </div>
+    </>
   );
 }
 
